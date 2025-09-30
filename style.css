@@ -90,8 +90,7 @@ button:active {
 h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  animation: fadeSlide 1s ease-out forwards, pulse 1.5s infinite alternate;
-  opacity: 0;
+  animation: fadeSlide 1s ease-out forwards;
   transform: translateY(-30px);
 }
 
