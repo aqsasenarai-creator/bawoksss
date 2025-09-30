@@ -10,6 +10,12 @@ body {
 
 h1 {
   font-size: 40px; /* bisa 20px, 50px, 3em, 5rem, dll */
+  margin-bottom: 20px; /* jarak bawah H1 */
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 0; /* jarak atas H2 */
 }
 
 /* Dark Mode */
