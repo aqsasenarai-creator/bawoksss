@@ -1,9 +1,9 @@
-/* Default Light Mode */
+/* Animasi transisi warna saat mode berubah */
 body {
   font-family: Arial, sans-serif;
   background-color: white;
   color: black;
-  transition: all 0.3s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
   text-align: center;
   padding: 50px;
 }
@@ -14,21 +14,29 @@ body.dark-mode {
   color: white;
 }
 
+/* Tombol kecil di kanan atas */
 button {
-  position: fixed;      /* biar nempel di layar */
-  top: 20px;            /* jarak dari atas */
-  right: 20px;          /* jarak dari kanan */
-  padding: 8px 12px;    /* biar kecil */
-  font-size: 12px;      /* kecilin font */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  font-size: 12px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   background-color: #333;
   color: white;
-  transition: background 0.3s ease;
-  z-index: 1000;        /* pastikan di atas elemen lain */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
 }
 
+/* Hover animasi */
 button:hover {
   background-color: #555;
+  transform: scale(1.1);   /* membesar sedikit */
+}
+
+/* Klik animasi */
+button:active {
+  transform: scale(0.9) rotate(-5deg);
 }
