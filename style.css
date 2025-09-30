@@ -8,6 +8,9 @@ body {
   padding: 50px;
 }
 
+h1 {
+  font-size: 40px; /* bisa 20px, 50px, 3em, 5rem, dll */
+}
 /* Dark Mode */
 body.dark-mode {
   background-color: #121212;
