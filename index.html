@@ -6,27 +6,56 @@
   <title>Senarai Store</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- Tombol ganti mode -->
+<body id="home">
+  <!-- 🔹 Menu Navigasi -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#profile">Profile Pengusaha</a></li>
+      <li><a href="#tentang">Tentang Perusahaan</a></li>
+      <li><a href="#blog">Blog Resmi</a></li>
+    </ul>
+  </nav>
+
+  <!-- Tombol Dark Mode -->
   <button id="toggleMode">Switch to Dark Mode 🌙</button>
 
-  <!-- Judul utama -->
-  <h1>SENARAI STORE</h1>
-  <p>Selamat datang di Senarai Store!</p>
+  <!-- 🔹 Section Home -->
+  <section id="home" class="section">
+    <h1>SENARAI STORE</h1>
+    <p>Selamat datang di Senarai Store!</p>
+    <div class="wave"></div>
+  </section>
 
-  <!-- Background wave -->
-  <div class="wave"></div>
+  <!-- 🔹 Section Produk -->
+  <section id="produk" class="section">
+    <h1>Pilihan Produk</h1>
+    <div class="produk-container">
+      <div class="produk">Produk 1</div>
+      <div class="produk">Produk 2</div>
+      <div class="produk">Produk 3</div>
+      <div class="produk">Produk 4</div>
+    </div>
+  </section>
 
-  <!-- Judul produk -->
-  <h2>Pilihan Produk</h2>
+  <!-- 🔹 Section Profile Pengusaha -->
+  <section id="profile" class="section">
+    <h1>Profile Pengusaha</h1>
+    <p>Berisi informasi tentang pendiri dan pengusaha Senarai Store.</p>
+  </section>
 
-  <!-- Daftar produk -->
-  <div class="produk-container">
-    <div class="produk">Produk 1</div>
-    <div class="produk">Produk 2</div>
-    <div class="produk">Produk 3</div>
-    <div class="produk">Produk 4</div>
-  </div>
+  <!-- 🔹 Section Tentang Perusahaan -->
+  <section id="tentang" class="section">
+    <h1>Tentang Perusahaan</h1>
+    <p>Kisah singkat dan visi misi perusahaan.</p>
+  </section>
+
+  <!-- 🔹 Section Blog Resmi -->
+  <section id="blog" class="section">
+    <h1>Blog Resmi</h1>
+    <p>Artikel, berita, dan informasi terbaru dari Senarai Store.</p>
+  </section>
 
   <script src="script.js"></script>
 </body>
