@@ -1,6 +1,6 @@
 /* Animasi transisi warna saat mode berubah */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Times New Roman, serif;
   background-color: white;
   color: black;
   transition: background-color 0.5s ease, color 0.5s ease;
