@@ -16,7 +16,7 @@ button.addEventListener("click", () => {
 const sections = document.querySelectorAll("section h1");
 
 const options = {
-  threshold: 0.5
+  threshold: 0.5 // aktif kalau minimal 50% elemen kelihatan
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -40,6 +40,8 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
   anchor.addEventListener("click", function(e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
-    target.scrollIntoView({ behavior: "smooth" });
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   });
 });
