@@ -37,7 +37,7 @@ h1 {
 /* Animasi berdenyut */
 @keyframes pulse {
   0% { transform: scale(1); }
-  50% { transform: scale(1.1); color: #999999; }
+  50% { transform: scale(1.1); color: #ff9999; }
   100% { transform: scale(1); }
 }
 
