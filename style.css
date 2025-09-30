@@ -11,6 +11,7 @@ body {
 h1 {
   font-size: 40px; /* bisa 20px, 50px, 3em, 5rem, dll */
   margin-bottom: 20px; /* jarak bawah H1 */
+  animation: pulse 1.5s infinite;
 }
 
 p {
