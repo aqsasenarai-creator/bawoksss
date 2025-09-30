@@ -1,7 +1,10 @@
+// 🔹 Ambil tombol dan body
 const button = document.getElementById("toggleMode");
 const body = document.body;
 
+// ==============================
 // 🔹 Toggle Dark/Light Mode
+// ==============================
 button.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
   
@@ -12,11 +15,14 @@ button.addEventListener("click", () => {
   }
 });
 
+// ==============================
 // 🔹 Animasi teks saat scroll
+// ==============================
 const sections = document.querySelectorAll("section h1");
 
+// Set threshold biar animasi aktif pas 50% elemen masuk viewport
 const options = {
-  threshold: 0.5 // aktif kalau minimal 50% elemen kelihatan
+  threshold: 0.5
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -31,11 +37,14 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, options);
 
+// Pasang observer ke semua <h1> dalam section
 sections.forEach(h1 => {
   observer.observe(h1);
 });
 
-// 🔹 Smooth Scroll animasi tambahan
+// ==============================
+// 🔹 Smooth Scroll tambahan
+// ==============================
 document.querySelectorAll('.navbar a').forEach(anchor => {
   anchor.addEventListener("click", function(e) {
     e.preventDefault();
