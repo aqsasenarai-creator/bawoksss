@@ -15,14 +15,18 @@ body.dark-mode {
 }
 
 button {
-  padding: 10px 20px;
+  position: fixed;      /* biar nempel di layar */
+  top: 20px;            /* jarak dari atas */
+  right: 20px;          /* jarak dari kanan */
+  padding: 8px 12px;    /* biar kecil */
+  font-size: 12px;      /* kecilin font */
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
   background-color: #333;
   color: white;
   transition: background 0.3s ease;
+  z-index: 1000;        /* pastikan di atas elemen lain */
 }
 
 button:hover {
