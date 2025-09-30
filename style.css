@@ -104,20 +104,23 @@ h1 {
 }
 
 .produk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
   height: 150px;
   background: white;
   border: 2px solid #333;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: bold;
+  color: black;           /* teks hitam */
+  text-decoration: none;  /* hilang underline */
   cursor: pointer;
   box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
   opacity: 0;
   transform: translateY(30px);
   animation: fadeSlide 0.8s ease forwards;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .produk:nth-child(1) { animation-delay: 0.2s; }
@@ -129,7 +132,6 @@ h1 {
   background-color: #5563DE;
   color: white;
   transform: scale(1.08) rotate(2deg);
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 /* 🔹 Keyframes */
