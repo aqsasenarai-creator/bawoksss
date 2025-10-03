@@ -44,7 +44,7 @@ body {
 /* 🔹 Tombol Dark Mode */
 button {
   position: fixed;
-  top: 15px;
+  down: 15px;
   right: 20px;
   padding: 8px 12px;
   font-size: 12px;
